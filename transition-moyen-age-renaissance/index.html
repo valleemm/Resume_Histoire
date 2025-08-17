@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transition Moyen Âge → Renaissance</title>
+<link rel="stylesheet" href="style-projet.css">
+</head>
+<body>
+<div class="wrap">
+  
+<button class="btn" onclick="window.location.href='../index.html'">🏠 Accueil</button>
+<table style="width: 100%;">
+  <tr>
+    <td style="text-align: left;">
+      <div class="header">
+        <h1>Transition Moyen Âge → Renaissance</h1>
+      </div>
+    </td>
+    <td style="text-align: right;">
+      <!--<a href="mindmap-complete.html" target="_blank" title="Ouvrir la mind map">🧠</a>-->
+      <button class="btn btn-icon" onclick="expandAll()">📖 Déplier</button>
+      <button class="btn btn-icon" onclick="collapseAll()">📕 Replier</button>
+
+    </td>
+  </tr>
+</table>
+
+<!-- commentaire ici 
+pour tous navigateurs  Emoji
+  <button class="btn btn-icon" onclick="expandAll()">📖 Déplier</button>
+  <button class="btn btn-icon" onclick="collapseAll()">📕 Replier</button>
+
+ disponible pour navigateur compatible HTML5+
+  <button class="btn btn-svg" onclick="expandAll()">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3 4v16a1 1 0 0 0 1 1h6V3H4a1 1 0 0 0-1 1zm8 0v18h9a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-9z"/>
+    </svg>
+    Déplier
+  </button>
+
+  <button class="btn btn-svg" onclick="collapseAll()">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 2H9a2 2 0 0 0-2 2v16a1 1 0 0 0 1.447.894L14 18.118l5.553 2.776A1 1 0 0 0 21 20V4a2 2 0 0 0-2-2z"/>
+    </svg>
+    Replier
+  </button>
+-->
+
+  <div style="margin: 20px 0; display: none; gap: 8px; flex-wrap: wrap;">
+    <!--
+       <input id="searchBranchs" type="text" placeholder="Rechercher (branches ou contenu des fiches)..." style="margin: 10px; padding: 6px; width: 360px;">
+    -->
+    <div id="searchResults" style="margin: 10px 0; font-size: 14px;"></div>
+  </div>
+
+  <div class="branch">
+    <div class="head">1. Crises et bouleversements (XIVe siècle)</div>
+    <div class="children">
+      <div>
+        <ul>
+          <li><span class="point-link" data-file="fiches/1-1-1-peste-noire.html">Peste noire (1347–1352)</span></li>
+          <li><span class="point-link" data-file="fiches/1-1-2-famines.html">Famines env. 1315–1322</span></li>
+          <li><span class="point-link" data-file="fiches/1-1-3-guerres.html">Guerres 1337–1453</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="branch">
+    <div class="head">2. Réorganisation politique</div>
+    <div class="children">
+      <div>
+        <ul>
+          <li><span class="point-link" data-file="fiches/2-1-centralisation-et-appareils-detat.html">Centralisation et appareils d'état</span></li>
+          <li><span class="point-link" data-file="fiches/2-2-impot-permanent-et-controle-fiscal.html">Impot permanent et controle fiscal</span></li>
+          <li><span class="point-link" data-file="fiches/2-3-role-des-parlements-et-conseils.html">Role des parlements et conseils</span></li>
+          <li><span class="point-link" data-file="fiches/2-4-unification-des-lois-et-administration-de-la-justice.html">Unification des lois et administration de la justice</span></li>
+          <li><span class="point-link" data-file="fiches/2-5-developpement-des-chancelleries-et-de-la-diplomatie.html">Développement des chancelleries et de la diplomatie</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>  
+  <div class="branch">
+  <div class="head">3. Crise religieuse</div>
+    <div class="children">
+      <div>
+        <ul>
+          <li><span class="point-link" data-file="fiches/3-1-grand-schisme-et-critiques.html">Grand schisme et critiques</span></li>
+          <li><span class="point-link" data-file="fiches/3-2-critiques-de-leglise.html">Critiques de l'église</span></li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+  <div class="branch">
+  <div class="head">4. Éveil culturel et humanisme</div>
+    <div class="children">
+      <div>
+        <ul>
+          <li><span class="point-link" data-file="fiches/4-1-redecouverte-de-l-antiquite-et-grands-mecenes.html">Redécouverte de l'antiquité et grands mécènes</span></li>
+          <li><span class="point-link" data-file="fiches/4-2-humanisme-et-ses-principes.html">Humanisme et ses principes</span></li>
+          <li><span class="point-link" data-file="fiches/4-3-innovations-artistiques-majeures.html">Innovations artistiques majeures</span></li>
+          <li><span class="point-link" data-file="fiches/4-4-architecture-et-urbanisme-renaissants.html">Architecture et urbanisme renaissants</span></li>
+          <li><span class="point-link" data-file="fiches/4-5-sciences-et-innovations-techniques.html">Sciences et innovations techniques</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="branch">
+  <div class="head">5. Révolutions techniques</div>
+    <div class="children">
+      <div>
+        <ul>
+          <li><span class="point-link" data-file="fiches/5-1-imprimerie-a-caracteres-mobiles.html">Imprimerie à caractères mobiles</span></li>
+          <li><span class="point-link" data-file="fiches/5-2-innovations-maritimes.html">Innovations maritimes</span></li>
+          <li><span class="point-link" data-file="fiches/5-3-innovations-militaires.html">Innovations militaires</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="branch">
+  <div class="head">6. Grandes découvertes</div>
+    <div class="children">
+      <div>
+        <ul>
+          <li><span class="point-link" data-file="fiches/6-1-grandes-decouvertes.html">Grandes découvertes</span></li>
+          <li><span class="point-link" data-file="fiches/6-2-echanges-colombiens.html">Echanges colombiens</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="branch">
+  <div class="head">7. Transformation sociale et économique</div>
+    <div class="children">
+      <div>
+        <ul>
+          <li><span class="point-link" data-file="fiches/7-1-bourgeoisie-et-economie-monetaire.html">Bourgeoisie et économie monetaire</span></li>
+          <li><span class="point-link" data-file="fiches/7-2-commerce-international.html">Commerce international</span></li>
+          <li><span class="point-link" data-file="fiches/7-3-transformations-sociales.html">Transformations sociales</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="backdrop" class="backdrop">
+  <div class="modal">
+    <div class="modal-hd" style="display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+      <div id="modalTitle" style="flex-grow: 1;"></div>
+      <div id="modalSearch" style="display: flex; align-items: center; gap: 6px;">
+        🔍
+        <input type="text" id="searchInput" placeholder="Rechercher…" style="padding: 4px 6px; font-size: 14px;">
+        <button onclick="clearSearch()" style="padding: 4px;">❌</button>
+      </div>
+      <div>
+        <button class="btn" id="btnPrint">🖨️ Imprimer</button>
+        <button class="btn" id="btnClose">❌ Fermer</button>
+      </div>
+    </div>
+    <div class="modal-bd" id="modalBody"></div>
+  </div>
+</div>
+<!-- 
+
+ -->
+
+<div id="print-area"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
