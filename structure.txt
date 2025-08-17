@@ -1,0 +1,27 @@
+index.html
+style_ResumeHistoire.css
+--Transition Moyen Age vers Renaissance
+    index.html
+    style-projet.css
+    script.js
+    --fiches
+        1-1-1-peste-noire.html
+        1-1-2-famines.html
+        etc...
+
+--La Révolution française
+    index.html
+    style-projet.css
+    script.js
+    --fiches
+        1-1-1-origine.html
+        etc...
+
+--Le désenclament du monde au XIVè siècle
+    index.html
+    style-projet.css
+    script.js
+    --fiches
+        1-1-1-origine.html
+        etc...
+
